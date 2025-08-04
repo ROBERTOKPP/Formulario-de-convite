@@ -40,26 +40,35 @@
   --shape-hover: #383D42;
 
    /* fontes */
-  --font-logo: 'Leckerli One', cursive;
-  --font-heading: 'Baloo 2', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-logo: "Leckerli One", cursive;
+  --font-heading: "Baloo 2", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
-  --logo: 400 2.5rem/auto var(--font-logo);           /* 40px */
-  --heading-md: 700 1.75rem/auto var(--font-heading); /* 28px */
-  --heading-sm: 700 1.125rem/auto var(--font-heading);/* 18px */
-  --body-md: 400 1rem/auto var(--font-body);          /* 16px */
-  --body-md-semibold: 600 1rem/auto var(--font-body); /* 16px semibold */
-  --body-sm: 400 0.875rem/auto var(--font-body);      /* 14px */
-  --body-sm-semibold: 600 0.875rem/auto var(--font-body); /* 14px semibold */
-  --body-xs: 400 0.75rem/auto var(--font-body);       /* 12px */
-  --body-xs-semibold: 600 0.75rem/auto var(--font-body); /* 12px semibold */
+  --logo: 400 2.5rem var(--font-logo);           /* 40px */
+  --heading-md: 700 1.75rem var(--font-heading); /* 28px */
+  --heading-sm: 700 1.125rem var(--font-heading);/* 18px */
+  --body-md: 300 1rem var(--font-body);          /* 16px */
+  --body-md-semibold: 600 1rem var(--font-body); /* 16px semibold */
+  --body-sm: 400 0.875rem var(--font-body);      /* 14px */
+  --body-sm-semibold: 600 0.875rem var(--font-body); /* 14px semibold */
+  --body-xs: 400 0.75rem var(--font-body);       /* 12px */
+  --body-xs-semibold: 600 0.75rem var(--font-body); /* 12px semibold */
 }
 
 body{
   overflow: hidden;
   color: var(--text-body);
   background-color: black;
+
+
+}
+header{
+  p{
+    font: var(--body-md);
+  }
+
+}
+
   img{
     width: 100%;
   }
-}

@@ -1,0 +1,14 @@
+fieldset{
+
+  appearance: none;
+  border: none;
+
+}
+  .frame-4{
+    display: flex;
+    align-items: center;
+    img{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
