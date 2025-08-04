@@ -5,8 +5,19 @@ input{
   border-radius: .5rem;
   border: 1px solid var(--input-stroke);
   background-color: var(--input-base);
+  color: var(--text-body);
+
+  &::placeholder{
+    color: var(--input-placeholder);
+    font: 400 1rem var(--font-body); ;
+  }
 
 }
+input:focus{
+  outline: 1px solid var(--brand-light);
+ 
+}
+
 
 label{
   display: block;
