@@ -31,12 +31,36 @@
           <form action="">
             <fieldset class="section">
               <div class="frame-4">
-              <img src="assets/icons/calendar.svg" alt="icons de calaendario">
-              <legend>Sobre o evento</legend>
-            </div>
+                <img src="assets/icons/calendar.svg" alt="icons de calaendario">
+                <legend>Sobre o evento</legend>
+              </div>
+              <div class="text-input">
+                <label for="title">Título</label>
+                <input type="text" name="title" id="title" placeholder="Nome do evento">
+              </div>
 
-            <label for="title">Título</label>
-            <input type="text" name="title" id="title" placeholder="Nome do evento">
+              <div class="container-text-input">
+                  <div class="text-input">
+                    <label for="start">Início</label>
+                    <input type="text" name="start" id="start" placeholder="DD/MM/AAAA, --:--">
+                  </div>
+                  <div class="text-input">
+                    <label for="end">Fim</label>
+                    <input type="text" name="end" id="end" placeholder="DD/MM/AAAA, --:--">
+                </div>
+              </div>
+
+              <!-- <div class="container-segmented-control">
+                <input type="radio" id="control-presencial" name="type" id="control-presencial" value="Presencial">
+                <label for="control-presencial">Presencial</label>
+
+                <input type="radio" id="control-on" name="type"  value="oline">
+                <label for="control-presencial">Online</label>
+
+              </div> -->
+
+
+
             </fieldset>
           </form>
 
