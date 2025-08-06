@@ -1,5 +1,5 @@
 
-input{
+input,textarea{
   width: 100%;
   padding: 1rem;
   border-radius: .5rem;
@@ -13,29 +13,23 @@ input{
   }
 
 }
-input:focus{
+input:focus,textarea:focus{
   outline: 1px solid var(--brand-light);
  
 }
 
-
-.text-input label{
+.text-input label,
+.radio-container > label,
+.container-textarea label,
+.container-color-radio label{
   display: block;
   margin-bottom: .75rem;
 }
 
 
-input[type="radio"] {
-  display: none;
-  
-
-}
 
 
-.radio-container > label{
-  display: block;
-  margin-bottom: .75rem;
-}
+
 
 #seg-control{
   grid-template-columns: repeat(2,50% 50%);
@@ -45,6 +39,10 @@ input[type="radio"] {
   height: 48px;
   padding: .25rem;
   
+  & input[type="radio"] {
+  display: none;
+  }
+
   img{
     max-width: 1rem;
   }
@@ -67,4 +65,37 @@ input[type="radio"] {
     font: var(--body-sm-semibold);
     color: var(--text-heading);
 
+  }
+
+  .contaniner-radio-color input{
+    appearance: none;
+    border: .5rem solid var(--shape-button);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    justify-content: space-between;
+  }
+
+  .theme{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+  }
+  .theme-selection {
+    border: 2px solid red;
+    border-radius: 8px;
+    position: relative ;
+    z-index: 1;
+    padding: 4px;
+    input{
+      /* all: unset; */
+      background-color: red;
+      position: absolute;
+      height: 100%; 
+    }
+
+    label{
+      display: flex;
+      margin: 8px 4px;
+      justify-content: center;
+    }
   }
