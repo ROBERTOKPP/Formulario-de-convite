@@ -27,6 +27,8 @@ input:focus{
 
 input[type="radio"] {
   display: none;
+  
+
 }
 
 
@@ -46,6 +48,8 @@ input[type="radio"] {
   img{
     max-width: 1rem;
   }
+
+
 }
   .input-radio{
     display: flex;
@@ -53,8 +57,14 @@ input[type="radio"] {
     gap: .5rem;
     border-radius: .5rem;
     padding: .5rem;
+    cursor: pointer;
+    font: var(--body-sm);
+    color: var(--text-body);
   }
 
   .input-radio:has(input[type="radio"]:checked){
     background-color: var(--shape-button);
+    font: var(--body-sm-semibold);
+    color: var(--text-heading);
+
   }

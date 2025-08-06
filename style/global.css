@@ -56,11 +56,9 @@
 }
 
 body{
-  overflow: hidden;
+  /* overflow: hidden; */
   color: var(--text-body);
   background-color: black;
-
-
 }
 header{
   p{
@@ -72,3 +70,4 @@ header{
   img{
     width: 100%;
   }
+

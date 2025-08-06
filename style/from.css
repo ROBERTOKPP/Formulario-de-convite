@@ -23,3 +23,15 @@ fieldset{
 .gap-16{
   gap: 1rem;
 }
+
+legend
+{
+  font: var(--heading-sm);
+  color: var(--text-heading);
+}
+
+label{
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
