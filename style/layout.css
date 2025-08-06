@@ -13,7 +13,7 @@ aside{
   max-width: 27.5rem;
   margin-left: auto;
   padding: 20px;
-  overflow: hidden;
+
   & .background-aside{
     background-image: url(../assets/background/Background.png);
     width: 25rem;

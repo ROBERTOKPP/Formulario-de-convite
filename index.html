@@ -34,12 +34,13 @@
                 <img src="assets/icons/calendar.svg" alt="icons de calaendario">
                 <legend>Sobre o evento</legend>
               </div>
+
               <div class="text-input">
                 <label for="title">Título</label>
                 <input type="text" name="title" id="title" placeholder="Nome do evento">
               </div>
 
-              <div class="container-text-input">
+              <div class="container-text-input gap-16">
                   <div class="text-input">
                     <label for="start">Início</label>
                     <input type="text" name="start" id="start" placeholder="DD/MM/AAAA, --:--">
@@ -50,16 +51,34 @@
                 </div>
               </div>
 
-              <!-- <div class="container-segmented-control">
-                <input type="radio" id="control-presencial" name="type" id="control-presencial" value="Presencial">
-                <label for="control-presencial">Presencial</label>
+              <div class="container-text-input gap-16">
+                <div class="radio-container">
 
-                <input type="radio" id="control-on" name="type"  value="oline">
-                <label for="control-presencial">Online</label>
+                  <label for="seg-control">Tipo</label>
 
-              </div> -->
+                  <div id="seg-control" class="container-text-input">
+                    <label for="control-pre" class="input-radio">
+                    <img src="assets/icons/building-2.svg" alt="icon building">
+                    <input type="radio"  name="type" id="control-pre" checked>
+                    Presencial</label>
 
+                    <label for="control-on" class="input-radio">
+                      <img src="assets/icons/video.svg" alt="icon video">
+                      <input type="radio" name="type" id="control-on" >
+                    Online</label>
+                  </div>
+              </div>
 
+              <div class="text-input">
+                <label for="title">Título</label>
+                <input type="text" name="title" id="title" placeholder="Nome do evento">
+              </div>
+
+              </div>
+
+              <div class="container-textarea">
+                
+              </div>
 
             </fieldset>
           </form>

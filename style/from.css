@@ -18,6 +18,8 @@ fieldset{
 .container-text-input{
   display: grid;
   grid-auto-flow: column;
-  gap: 1rem;
 }
 
+.gap-16{
+  gap: 1rem;
+}
