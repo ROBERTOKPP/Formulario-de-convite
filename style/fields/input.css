@@ -76,26 +76,38 @@ input:focus,textarea:focus{
     justify-content: space-between;
   }
 
+
+
+
   .theme{
     display: grid;
-    grid-template-columns: repeat(auto-fit);
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
   }
   .theme-selection {
-    border: 2px solid red;
-    border-radius: 8px;
-    position: relative ;
-    z-index: 1;
-    padding: 4px;
+    border: 2px solid var(--input-stroke);
+    border-radius: .5rem;
+    padding: 0.25rem;
+    display: flex;
     input{
-      /* all: unset; */
-      background-color: red;
-      position: absolute;
+      display: none;
       height: 100%; 
+    }
+    img{
+      margin-bottom: 8px;
     }
 
     label{
-      display: flex;
-      margin: 8px 4px;
-      justify-content: center;
+      display: block;
+      text-align: center;
+      margin-bottom: .5rem;
     }
+
+  }
+
+  .theme-selection:has(input[type="radio"]:checked){
+    border: 2px solid var(--brand-light);
+    font: var(--body-sm-semibold);
+    color: var(--text-heading);
+
   }
