@@ -1,102 +1,98 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
-:root{
-
+:root {
   /* cores dos textos */
-  --text-body:#C8CDD0;
-  --text-heading:#F9F9F9;
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
 
   /* cores da brand */
-  --brand-light: #59B2FF;
-  --brand-mid:#3487CF;
-  --brand-dark:#1D6FB6;
-
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
 
   /* cores dos inputs */
-  --input-base:#1C1F21;
-  --input-stroke:#363B40;
-  --input-placeholder:#869198;
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
 
   /* cores */
-   .color-light{
-      background-color: var(--brand-light);
-    }
-  
-    .color-purple{
-      background-color: #B259FF;
-    }
-    .color-fuschia{
-      background-color: #FF59F9;
-    }
-    .color-pink{
-      background-color: #FF598B;
-    }
-    .color-orange{
-      background-color: #FF8B59;
-    }
-    .color-yellow{
-      background-color: #FFCD59;
-    }
-    .color-lime{
-      background-color: #E1FF59;
-    }
-    .color-green{
-      background-color: #59FF91;
-    }
-    .color-cuan{
-      background-color: #59FFF9;
-    }
-    .color-navy{
-      background-color: #6A59FF;
-    }
+  .color-light {
+    background-color: var(--brand-light);
+  }
 
-    .color-danger{
-      background-color: #FF5959;
-    }
+  .color-purple {
+    background-color: #b259ff;
+  }
+  .color-fuschia {
+    background-color: #ff59f9;
+  }
+  .color-pink {
+    background-color: #ff598b;
+  }
+  .color-orange {
+    background-color: #ff8b59;
+  }
+  .color-yellow {
+    background-color: #ffcd59;
+  }
+  .color-lime {
+    background-color: #e1ff59;
+  }
+  .color-green {
+    background-color: #59ff91;
+  }
+  .color-cuan {
+    background-color: #59fff9;
+  }
+  .color-navy {
+    background-color: #6a59ff;
+  }
+
+  .color-danger {
+    background-color: #ff5959;
+  }
 
   /* shapes */
   --shape-background: #131516;
   --shape-body: #212427;
-  --shape-button: #2D3136;
-  --shape-hover: #383D42;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
 
-   /* fontes */
+  /* fontes */
   --font-logo: "Leckerli One", cursive;
   --font-heading: "Baloo 2", sans-serif;
   --font-body: "Open Sans", sans-serif;
 
-  --logo: 400 2.5rem var(--font-logo);           /* 40px */
+  --logo: 400 2.5rem var(--font-logo); /* 40px */
   --heading-md: 700 1.75rem var(--font-heading); /* 28px */
-  --heading-sm: 700 1.125rem var(--font-heading);/* 18px */
-  --body-md: 300 1rem var(--font-body);          /* 16px */
+  --heading-sm: 700 1.125rem var(--font-heading); /* 18px */
+  --body-md: 300 1rem var(--font-body); /* 16px */
   --body-md-semibold: 600 1rem var(--font-body); /* 16px semibold */
-  --body-sm: 400 0.875rem var(--font-body);      /* 14px */
+  --body-sm: 400 0.875rem var(--font-body); /* 14px */
   --body-sm-semibold: 600 0.875rem var(--font-body); /* 14px semibold */
-  --body-xs: 400 0.75rem var(--font-body);       /* 12px */
+  --body-xs: 400 0.75rem var(--font-body); /* 12px */
   --body-xs-semibold: 600 0.75rem var(--font-body); /* 12px semibold */
 }
 
-body{
+body {
   /* overflow: hidden; */
   color: var(--text-body);
   background-color: black;
 }
-header{
-  p{
+header {
+  p {
     font: var(--body-md);
   }
 
-  h2{
+  h2 {
     font: var(--heading-md);
   }
 }
 
-  img{
-    width: 100%;
-  }
-
+img {
+  width: 100%;
+}

@@ -1,113 +1,143 @@
-
-input,textarea{
+input,
+textarea {
   width: 100%;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--input-stroke);
   background-color: var(--input-base);
   color: var(--text-body);
   margin-bottom: 1rem;
-  &::placeholder{
+  &::placeholder {
     color: var(--input-placeholder);
-    font: 400 1rem var(--font-body); ;
+    font: 400 1rem var(--font-body);
   }
-
 }
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
   outline: 1px solid var(--brand-light);
- 
 }
 
 .text-input label,
 .radio-container > label,
 .container-textarea label,
-.container-color-radio label{
+.container-color-radio label,
+.theme label {
   display: block;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
-
-
-
-
-
-#seg-control{
-  grid-template-columns: repeat(2,50% 50%);
+#seg-control {
+  grid-template-columns: repeat(2, 50% 50%);
   border: 1px solid var(--input-stroke);
   background-color: var(--input-base);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   height: 48px;
-  padding: .25rem;
-  
+  padding: 0.25rem;
+
   & input[type="radio"] {
-  display: none;
+    display: none;
   }
 
-  img{
+  img {
     max-width: 1rem;
   }
-
-
 }
-  .input-radio{
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    border-radius: .5rem;
-    padding: .5rem;
-    cursor: pointer;
-    font: var(--body-sm);
-    color: var(--text-body);
+.input-radio {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+.input-radio:has(input[type="radio"]:checked) {
+  background-color: var(--shape-button);
+  font: var(--body-sm-semibold);
+  color: var(--text-heading);
+}
+
+.contaniner-radio-color input {
+  appearance: none;
+  border: 0.5rem solid var(--shape-button);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  justify-content: space-between;
+}
+
+.theme-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.theme-selection {
+  border: 2px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  display: flex;
+  input {
+    display: none;
+    height: 100%;
+  }
+  img {
+    margin-bottom: 8px;
   }
 
-  .input-radio:has(input[type="radio"]:checked){
-    background-color: var(--shape-button);
-    font: var(--body-sm-semibold);
-    color: var(--text-heading);
-
+  label {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
+}
+.theme-selection:hover {
+  background-color: var(--shape-hover);
+}
 
-  .contaniner-radio-color input{
-    appearance: none;
-    border: .5rem solid var(--shape-button);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 999px;
-    justify-content: space-between;
+.theme-selection:has(input[type="radio"]:checked) {
+  border: 2px solid var(--brand-light);
+  font: var(--body-sm-semibold);
+  color: var(--text-heading);
+}
+
+.switch-toggle {
+  display: flex;
+}
+#checkbox1 {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  padding: .25rem;
+  border-radius: 10rem;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  background-color: var(--input-stroke);
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  transition: all .5s ease-in-out;
+}
+
+#checkbox1:checked + .switch {
+  background-color: var(--brand-light);
+  .slider{
+    background-color: var(--text-heading);
   }
+}
 
-
-
-
-  .theme{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 8px;
-  }
-  .theme-selection {
-    border: 2px solid var(--input-stroke);
-    border-radius: .5rem;
-    padding: 0.25rem;
-    display: flex;
-    input{
-      display: none;
-      height: 100%; 
-    }
-    img{
-      margin-bottom: 8px;
-    }
-
-    label{
-      display: block;
-      text-align: center;
-      margin-bottom: .5rem;
-    }
-
-  }
-
-  .theme-selection:has(input[type="radio"]:checked){
-    border: 2px solid var(--brand-light);
-    font: var(--body-sm-semibold);
-    color: var(--text-heading);
-
-  }
+#checkbox1:checked + .switch .slider {
+  transform: translateX(2rem);
+}
