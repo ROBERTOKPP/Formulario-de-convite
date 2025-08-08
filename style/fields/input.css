@@ -1,4 +1,4 @@
-input,
+input[type="text"],
 textarea {
   width: 100%;
   padding: 1rem;
@@ -12,7 +12,7 @@ textarea {
     font: 400 1rem var(--font-body);
   }
 }
-input:focus,
+input[type="text"]:focus,
 textarea:focus {
   outline: 1px solid var(--brand-light);
 }
@@ -21,7 +21,8 @@ textarea:focus {
 .radio-container > label,
 .container-textarea label,
 .container-color-radio label,
-.theme label {
+.theme label,
+.container-file-input > label {
   display: block;
   margin-bottom: 0.75rem;
 }
@@ -72,6 +73,7 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
+  margin-bottom: 26px;
 }
 .theme-selection {
   border: 2px solid var(--input-stroke);
@@ -102,42 +104,101 @@ textarea:focus {
   color: var(--text-heading);
 }
 
-.switch-toggle {
-  display: flex;
-}
 #checkbox1 {
   display: none;
 }
 
 .switch {
+  margin-top: 0.75rem;
   position: relative;
   display: flex;
   align-items: center;
-  width: 4rem;
+  width: 4.0625rem;
   height: 2rem;
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
-  padding: .25rem;
-  border-radius: 10rem;
-  transition: all .5s ease-in-out;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
+
 .slider {
   position: absolute;
   background-color: var(--input-stroke);
-  border-radius: 50px;
-  width: 24px;
-  height: 24px;
-  transition: all .5s ease-in-out;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.5s linear;
+  margin-left: 0.25rem;
+}
+
+.escuroouclaro::after {
+  content: "Escuro";
+  position: absolute;
+  left: 80px;
+  top: 4px;
 }
 
 #checkbox1:checked + .switch {
   background-color: var(--brand-light);
-  .slider{
+  .slider {
     background-color: var(--text-heading);
+  }
+  .escuroouclaro::after {
+    content: "Claro";
   }
 }
 
 #checkbox1:checked + .switch .slider {
   transform: translateX(2rem);
+}
+
+.toggle-file {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="file"] {
+  display: none;
+  height: 100%;
+}
+.button {
+  display: flex;
+  align-items: center;
+  background-color: var(--shape-button);
+  font: var(--body-sm-semibold);
+  border-radius: 0.5rem;
+  width: 120px;
+  height: 40px;
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.teste {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.file-input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  label:nth-child(2) {
+    color: var(--input-placeholder);
+  }
+
+}
+
+
+.text-input input:invalid:active + .error,
+.text-input input:invalid:focus + .error
+{
+  border-color: var(--danger) !important;
+  color: var(--danger);
 }

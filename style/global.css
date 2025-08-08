@@ -55,6 +55,7 @@
   .color-danger {
     background-color: #ff5959;
   }
+  --danger: #ff5959;
 
   /* shapes */
   --shape-background: #131516;

@@ -310,12 +310,79 @@
                 </div>
               </div>
 
-              <div class="switch-toggle">
-                <input type="checkbox" id="checkbox1" />
-                <label for="checkbox1" class="switch">
-                  <span class="slider"></span>
-                </label>
+              <div class="toggle-file">
+                <div class="switch-toggle">
+                  <label for="checkbox1">Estilo</label>
+                  <input type="checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="switch">
+                    <span class="slider"></span>
+                    <label class="escuroouclaro"></label>
+                  </label>
+                </div>
+
+                <div class="container-file-input">
+                  <label for="photo-input"> Foto da capa </label>
+                  <div class="file-input">
+                    <div class="button">
+                      <label for="button-file" class="teste">
+                        <input type="file" id="button-file" />
+                        <img
+                          src="assets/icons/upload.svg"
+                          alt="icons de upload"
+                        />
+                        Selecionar</label
+                      >
+                    </div>
+                    <label for="button-file">Nenhum arquivo selecionado</label>
+                  </div>
+                </div>
               </div>
+            </fieldset>
+
+            <fieldset class="section">
+              <div class="frame-4">
+                <img src="assets/icons/contact.svg" alt="icons de contatos" />
+                <legend>Dados para contato</legend>
+              </div>
+
+              <div class="text-input">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome completo"
+                  required
+                  checked
+                />
+                <span class="error">Campo obrigatorio</span>
+              </div>
+
+              <div class="container-text-input gap-16">
+                <div class="text-input">
+                  <label for="title">Título</label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Nome do evento"
+                  />
+                </div>
+
+                <div class="text-input">
+                  <label for="title">Título</label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Nome do evento"
+                  />
+                  
+                </div>
+
+              </div>
+
+              <input type="submit">
             </fieldset>
           </form>
         </div>
