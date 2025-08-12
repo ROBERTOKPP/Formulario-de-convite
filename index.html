@@ -144,68 +144,99 @@
                 >
 
                 <div class="contaniner-radio-color container-text-input">
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      checked
-                      class="color-light"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input type="radio" name="color-radio" class="color-navy" />
-                  </label>
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      class="color-purple"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      class="color-fuschia"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input type="radio" name="color-radio" class="color-pink" />
-                  </label>
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      class="color-danger"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      class="color-orange"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      class="color-yellow"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input type="radio" name="color-radio" class="color-lime" />
-                  </label>
-                  <label for="color-radio">
-                    <input
-                      type="radio"
-                      name="color-radio"
-                      class="color-green"
-                    />
-                  </label>
-                  <label for="color-radio">
-                    <input type="radio" name="color-radio" class="color-cuan" />
-                  </label>
+                  <div class="color-radio color-light">
+                    <label for="color-brand-light">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-brand-light"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-navy">
+                    <label for="color-navy-">
+                      <input type="radio" name="color-radio" id="color-navy-" />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-purple">
+                    <label for="color-purple-">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-purple-"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-fuschia">
+                    <label for="color-fuschia-">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-fuschia-"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-pink">
+                    <label for="color-pink-">
+                      <input type="radio" name="color-radio" id="color-pink-" />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-danger">
+                    <label for="color-danger-">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-danger-"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-orange">
+                    <label for="color-orange-">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-orange-"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-yellow">
+                    <label for="color-yellow-">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-yellow-"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-lime">
+                    <label for="color-lime-">
+                      <input type="radio" name="color-radio" id="color-lime-" />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-green">
+                    <label for="color-green-">
+                      <input
+                        type="radio"
+                        name="color-radio"
+                        id="color-green-"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="color-radio color-cuan">
+                    <label for="color-cuan-">
+                      <input type="radio" name="color-radio" id="color-cuan-" />
+                    </label>
+                  </div>
                 </div>
               </div>
 
@@ -213,8 +244,8 @@
                 <label for="itens-theme">Tema do evento</label>
                 <div class="theme-container">
                   <div class="theme-selection">
-                    <input type="radio" name="itens-theme" id="Birthday" />
                     <label for="Birthday">
+                      <input type="radio" name="itens-theme" id="Birthday" />
                       <img src="assets/img/Image.png" alt="" />
                       Aniversário</label
                     >
@@ -324,7 +355,7 @@
                   <label for="photo-input"> Foto da capa </label>
                   <div class="file-input">
                     <div class="button">
-                      <label for="button-file" class="teste">
+                      <label for="button-file" class="button-file">
                         <input type="file" id="button-file" />
                         <img
                           src="assets/icons/upload.svg"
@@ -353,9 +384,11 @@
                   id="name"
                   placeholder="Nome completo"
                   required
-                  checked
                 />
-                <span class="error">Campo obrigatorio</span>
+                
+                  <span class="error-img"></span>
+                  <small class="error">Campo obrigatorio</small>
+                
               </div>
 
               <div class="container-text-input gap-16">
@@ -377,12 +410,10 @@
                     id="title"
                     placeholder="Nome do evento"
                   />
-                  
                 </div>
-
               </div>
 
-              <input type="submit">
+              <input type="submit" />
             </fieldset>
           </form>
         </div>

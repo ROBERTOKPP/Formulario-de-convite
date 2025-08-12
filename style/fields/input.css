@@ -11,11 +11,24 @@ textarea {
     color: var(--input-placeholder);
     font: 400 1rem var(--font-body);
   }
+  &:required{
+    margin: 0;
+  }
 }
 input[type="text"]:focus,
 textarea:focus {
   outline: 1px solid var(--brand-light);
 }
+input:invalid:active,
+input:invalid:focus {
+  outline: 1px solid var(--danger);
+}
+
+input:invalid:active + .error,
+input:invalid:focus + .error{
+    color: var(--danger);
+}
+
 
 .text-input label,
 .radio-container > label,
@@ -60,14 +73,49 @@ textarea:focus {
   color: var(--text-heading);
 }
 
-.contaniner-radio-color input {
-  appearance: none;
-  border: 0.5rem solid var(--shape-button);
-  width: 3rem;
-  height: 3rem;
+/* ---------------Seção personalização ----------------*/
+
+/* ---------------COR PRINCIPAL---------------- */
+
+.color-radio {
   border-radius: 999px;
-  justify-content: space-between;
+  border: 4px solid var(--shape-button);
+  width: 30px;
+  height: 30px;
+  margin-bottom: 28px;
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    input {
+      appearance: none;
+    }
+  }
 }
+.color-radio:hover {
+  border-color: var(--shape-hover);
+}
+
+.color-radio:has(input[type="radio"]:checked) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    border: 1px solid var(--brand-light);
+    border-radius: 999px;
+    padding-inline: 14px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ------------------------------------------- */
+
+/* ----------------------TEMA DO EVENTO--------------------- */
 
 .theme-container {
   display: grid;
@@ -75,14 +123,18 @@ textarea:focus {
   gap: 0.5rem;
   margin-bottom: 26px;
 }
+
 .theme-selection {
   border: 2px solid var(--input-stroke);
   border-radius: 0.5rem;
   padding: 0.25rem;
   display: flex;
+  position: relative;
   input {
-    display: none;
+    appearance: none;
     height: 100%;
+    width: 100%;
+    position: absolute;
   }
   img {
     margin-bottom: 8px;
@@ -94,6 +146,7 @@ textarea:focus {
     margin-bottom: 0.5rem;
   }
 }
+
 .theme-selection:hover {
   background-color: var(--shape-hover);
 }
@@ -104,6 +157,9 @@ textarea:focus {
   color: var(--text-heading);
 }
 
+/* -------------------------------------------------- */
+
+/* -----------------ESTILO CLARO E ESCURO------------------ */
 #checkbox1 {
   display: none;
 }
@@ -153,6 +209,10 @@ textarea:focus {
   transform: translateX(2rem);
 }
 
+/* ----------------------------------- */
+
+/* ----------FOTO DA CAPA--------- */
+
 .toggle-file {
   display: flex;
   justify-content: space-between;
@@ -175,7 +235,7 @@ input[type="file"] {
     height: 1rem;
   }
 }
-.teste {
+.button-file {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -183,7 +243,7 @@ input[type="file"] {
   width: 100%;
 }
 
-.file-input{
+.file-input {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,13 +252,20 @@ input[type="file"] {
   label:nth-child(2) {
     color: var(--input-placeholder);
   }
-
 }
 
+/* ----------------------------------- */
 
-.text-input input:invalid:active + .error,
-.text-input input:invalid:focus + .error
-{
-  border-color: var(--danger) !important;
-  color: var(--danger);
-}
+/* ------------ dados para contato ----------------------- */
+
+/* .text-input input:invalid:active,
+.text-input input:invalid:focus {
+    color: var(--danger);
+    outline: 1px solid red;
+
+    &::nth-child(4){
+      color: var(--danger);
+    }
+} */
+
+

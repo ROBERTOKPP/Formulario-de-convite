@@ -51,10 +51,10 @@
   .color-navy {
     background-color: #6a59ff;
   }
-
   .color-danger {
     background-color: #ff5959;
   }
+
   --danger: #ff5959;
 
   /* shapes */
@@ -83,6 +83,8 @@ body {
   /* overflow: hidden; */
   color: var(--text-body);
   background-color: black;
+
+
 }
 header {
   p {
@@ -97,3 +99,16 @@ header {
 img {
   width: 100%;
 }
+
+  small {
+    display: block;
+    margin-bottom: 1rem;
+    font: var(--body-xs);
+  }
+
+  .error-img{
+    background-image: url(../assets/icons/circle-alert.svg);
+    background-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
