@@ -1,6 +1,7 @@
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="datetime"],
 textarea {
   width: 100%;
   padding: 1rem;
@@ -20,6 +21,7 @@ textarea {
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
+input[type="datetime"]:focus,
 textarea:focus {
   outline: 1px solid var(--brand-light);
 }
@@ -64,23 +66,22 @@ input:invalid:focus ~ .error {
 
 #seg-control {
   grid-template-columns: repeat(2, 50% 50%);
+  
   border: 1px solid var(--input-stroke);
   background-color: var(--input-base);
   border-radius: 0.5rem;
-  height: 48px;
+  height: 3rem;
   padding: 0.25rem;
 
   & input[type="radio"] {
-    display: none;
+    appearance: none;
   }
 
-  img {
-    max-width: 1rem;
-  }
 }
 .input-radio {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -91,8 +92,11 @@ input:invalid:focus ~ .error {
 
 .input-radio:has(input[type="radio"]:checked) {
   background-color: var(--shape-button);
-  font: var(--body-sm-semibold);
+  font: var(--body-sm);
   color: var(--text-heading);
+  svg path{
+    fill: #3487cf;
+  }
 }
 
 /* ---------------Seção personalização ----------------*/
@@ -288,8 +292,9 @@ input[type="file"] {
 #checkbox01,
 #checkbox02,
 #checkbox03 {
-  display: none;
+  appearance: none;
 }
+
 .checkbox-itens {
   width: 1.25rem;
   height: 1.25rem;
@@ -304,16 +309,15 @@ input[type="file"] {
   background-size: contain;
 }
 
-.checkbox-itens input[type="checkbox"]:required{
+.checkbox-itens:has(input:invalid:focus) {
   outline: 1px solid var(--danger);
 }
-
 
 .container-checkbox {
   display: flex;
   gap: 1rem;
   padding: 0.25rem;
-  span{
+  span {
     color: var(--brand-light);
     font: var(--body-sm-semibold);
   }

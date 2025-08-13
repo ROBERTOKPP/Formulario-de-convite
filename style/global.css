@@ -80,11 +80,9 @@
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   color: var(--text-body);
-  background-color: black;
-
-
+  background-color: #131516;
 }
 header {
   p {
@@ -100,7 +98,6 @@ header {
   width: 100%;
 } */
 
-  small {
-    font: var(--body-xs);
-  }
-
+small {
+  font: var(--body-xs);
+}

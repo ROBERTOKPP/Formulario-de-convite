@@ -1,12 +1,10 @@
 #app {
   display: grid;
   grid-template-columns: 34.375% 65.625%;
-  overflow: hidden;
-  background-color: #131516;
-  border-radius: 1.25rem;
-  margin-top: 5rem;
   width: 80rem;
   margin-inline: auto;
+  overflow: hidden;
+  height: 100vh;
 }
 
 aside {
@@ -36,10 +34,9 @@ aside {
 main {
   overflow: auto;
   max-width: 52.5rem;
-  margin-top: 20px;
+  margin-block: 20px;
   background-color: #212427;
   border-radius: 1.25rem;
   width: 51.25rem;
-  height: auto;
   padding: 5rem 8.125rem;
 }
